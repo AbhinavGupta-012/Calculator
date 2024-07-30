@@ -5,8 +5,10 @@ Here we have included both the Android Version and the IOS Version of the Calcul
 # Snapshots
 ![Home]()
 <center> <i> Landing Page </i> </center>
+
 ![Android]()
 <center> <i> Android Calculator </i> </center>
+
 ![Iphone]()
 <center> <i> Iphone Calculator </i> </center>
 
