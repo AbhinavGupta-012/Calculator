@@ -4,13 +4,13 @@ Here we have included both the Android Version and the IOS Version of the Calcul
 
 # Snapshots
 ![Home](/Images/home.png)
-<center> <i> Landing Page </i> </center>
+<p align = center> <i> Landing Page </i> </p>
 
 ![Android](/Images/android_calc.png)
-<center> <i> Android Calculator </i> </center>
+<p align = center> <i> Android Calculator </i> </p>
 
 ![Iphone](/Images/iphone_calc.png)
-<center> <i> Iphone Calculator </i> </center>
+<p align = center> <i> Iphone Calculator </i> </p>
 
 ## Future Additions
 - Conversion to Light Mode.
