@@ -1,0 +1,436 @@
+*{
+    font-family: ubuntu;
+    background-color: grey;
+    overflow: hidden;
+}
+
+body{
+    zoom: 90%;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.select h3{
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    top: 80px;
+}
+
+img{
+    border-radius: 25px;
+}
+
+p{
+    text-align: center;
+    text-decoration: double;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 200px;
+    transition: transform 3s ease;
+}
+
+.move-right{
+    transform: translateX(100vw);
+}
+
+.move-left{
+    transform: translateX(-100vw);
+}
+
+.android, .iphone{
+    cursor: pointer;
+}
+
+.android-calc, .iphone-calc{
+    position: fixed;
+    top: 100px;
+    transition: transform 2.5s ease;
+}
+
+.android-calc{
+    left: -40vw;
+}
+
+.iphone-calc{
+    right: -40vw;
+}
+
+.android-calc.show{
+    transform: translateX(85vw);
+}
+
+.iphone-calc.show{
+    transform: translateX(-85vw);
+}
+
+.calc-android, .calc-iphone{
+    height: 575px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.calc-android .equal, .calc-iphone .equal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.calc-android .period, .calc-iphone .period{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 10px;
+    right: 85px;
+    cursor: pointer;
+}
+
+.calc-android .zero, .calc-iphone .zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 10px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-iphone .zero{
+    width: 120px;
+    left: 10px;
+    justify-content: left;  
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.calc-android .double-zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.calc-android .add, .calc-iphone .add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 90px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.calc-android .three, .calc-iphone .three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 90px;
+    right: 85px;
+    cursor: pointer;
+}
+
+.calc-android .two, .calc-iphone .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 90px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-android .one, .calc-iphone .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 90px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.calc-android .sub, .calc-iphone .sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 170px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.calc-android .six, .calc-iphone .six{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 170px;
+    right: 85px;
+    cursor: pointer;
+}
+
+.calc-android .five, .calc-iphone .five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 170px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-android .four, .calc-iphone .four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 170px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.calc-android .multiply, .calc-iphone .multiply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 250px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.calc-android .nine, .calc-iphone .nine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 250px;
+    right: 85px;
+    cursor: pointer;
+}
+
+.calc-android .eight, .calc-iphone .eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 250px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-android .seven, .calc-iphone .seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 250px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.calc-android .divide, .calc-iphone .divide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.calc-android .clear, .calc-iphone .clear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.calc-android .percent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-android #backspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    right: 85px;
+    background-color: #1E1E1E;
+    cursor: pointer;
+}
+
+.calc-iphone .percent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    right: 85px;
+    cursor: pointer;
+}
+.calc-iphone .change-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    bottom: 330px;
+    left: 85px;
+    cursor: pointer;
+}
+
+.calc-android .equal{
+    background-color: #F08221;
+}
+
+.calc-android .period, .zero, .double-zero, .three, .two, .one, .six, .five, .four, .nine, .eight, .seven{
+    background-color: #2E2E2E;
+}
+
+.calc-iphone .period, .zero, .three, .two, .one, .six, .five, .four, .nine, .eight, .seven{
+    background-color: #333333;
+}
+
+.calc-iphone .equal, .calc-iphone .add, .calc-iphone .sub, .calc-iphone .multiply, .calc-iphone .divide{
+    background-color: #FFA500;
+}
+
+.calc-iphone .clear, .calc-iphone .percent, .calc-iphone .change-sign{
+    background-color: #A5A5A5;
+    color: black;
+}
+
+.calc-android .add, .sub, .multiply, .divide, .clear, .percent{
+    background-color: #1E1E1E;
+}
+
+.android-display, .iphone-display {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+    background-color: #2E2E2E;
+    bottom: 430px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
