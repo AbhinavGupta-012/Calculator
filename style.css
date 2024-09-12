@@ -80,7 +80,7 @@ p{
     color: white;
 }
 
-.calc-android .equal, .calc-iphone .equal{
+.calc-android #equal, .calc-iphone #equal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .period, .calc-iphone .period{
+.calc-android #period, .calc-iphone #period{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .zero, .calc-iphone .zero{
+.calc-android #zero, .calc-iphone #zero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +122,7 @@ p{
     cursor: pointer;
 }
 
-.calc-iphone .zero{
+.calc-iphone #zero{
     width: 120px;
     left: 10px;
     justify-content: left;  
@@ -130,7 +130,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .double-zero{
+.calc-android #double-zero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .add, .calc-iphone .add{
+.calc-android #add, .calc-iphone #add{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .three, .calc-iphone .three{
+.calc-android #three, .calc-iphone #three{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,7 +172,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .two, .calc-iphone .two{
+.calc-android #two, .calc-iphone #two{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +186,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .one, .calc-iphone .one{
+.calc-android #one, .calc-iphone #one{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .sub, .calc-iphone .sub{
+.calc-android #sub, .calc-iphone #sub{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .six, .calc-iphone .six{
+.calc-android #six, .calc-iphone #six{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +228,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .five, .calc-iphone .five{
+.calc-android #five, .calc-iphone #five{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +242,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .four, .calc-iphone .four{
+.calc-android #four, .calc-iphone #four{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +256,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .multiply, .calc-iphone .multiply{
+.calc-android #multiply, .calc-iphone #multiply{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +270,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .nine, .calc-iphone .nine{
+.calc-android #nine, .calc-iphone #nine{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .eight, .calc-iphone .eight{
+.calc-android #eight, .calc-iphone #eight{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +298,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .seven, .calc-iphone .seven{
+.calc-android #seven, .calc-iphone #seven{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,7 +312,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .divide, .calc-iphone .divide{
+.calc-android #divide, .calc-iphone #divide{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,7 +326,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .clear, .calc-iphone .clear{
+.calc-android #clear, .calc-iphone #clear{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +340,7 @@ p{
     cursor: pointer;
 }
 
-.calc-android .percent{
+.calc-android #percent{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +369,7 @@ p{
     cursor: pointer;
 }
 
-.calc-iphone .percent{
+.calc-iphone #percent{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,7 +382,7 @@ p{
     right: 85px;
     cursor: pointer;
 }
-.calc-iphone .change-sign{
+.calc-iphone #change-sign{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,34 +396,34 @@ p{
     cursor: pointer;
 }
 
-.calc-android .equal{
+.calc-android #equal{
     background-color: #F08221;
 }
 
-.calc-android .period, .zero, .double-zero, .three, .two, .one, .six, .five, .four, .nine, .eight, .seven{
+.calc-android #period, #zero, #double-zero, #three, #two, #one, #six, #five, #four, #nine, #eight, #seven{
     background-color: #2E2E2E;
 }
 
-.calc-iphone .period, .zero, .three, .two, .one, .six, .five, .four, .nine, .eight, .seven{
+.calc-iphone #period, #zero, #three, #two, #one, #six, #five, #four, #nine, #eight, #seven{
     background-color: #333333;
 }
 
-.calc-iphone .equal, .calc-iphone .add, .calc-iphone .sub, .calc-iphone .multiply, .calc-iphone .divide{
+.calc-iphone #equal, .calc-iphone #add, .calc-iphone #sub, .calc-iphone #multiply, .calc-iphone #divide{
     background-color: #FFA500;
 }
 
-.calc-iphone .clear, .calc-iphone .percent, .calc-iphone .change-sign{
+.calc-iphone #clear, .calc-iphone #percent, .calc-iphone #change-sign{
     background-color: #A5A5A5;
     color: black;
 }
 
-.calc-android .add, .sub, .multiply, .divide, .clear, .percent{
+.calc-android #add, #sub, #multiply, #divide, #clear, #percent{
     background-color: #1E1E1E;
 }
 
-.android-display, .iphone-display {
+#android-display, #iphone-display {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
     height: 100px;
@@ -433,4 +433,10 @@ p{
     bottom: 430px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     color: #fff;
+}
+
+.display-content {
+    background-color: #2E2E2E;
+    margin-left: 21px;
+    margin-right: 21px;
 }

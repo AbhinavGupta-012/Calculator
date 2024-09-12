@@ -27,52 +27,52 @@
         <div class = "android-calc">
             <h1> Android </h1>
             <div class = "calc-android">
-                <div class = "android-display"></div>
-                <div class = "clear"> AC </div>
-                <div class = "percent"> &percnt; </div>
-                <div class = "divide"> &divide; </div>
+                <div id = "android-display"> <span class="display-content"></span> </div>
+                <div id = "clear"> AC </div>
+                <div id = "percent" onclick = "displaySymbol('%')"> &percnt; </div>
+                <div id = "divide" onclick = "displaySymbol('/')"> &divide; </div>
                 <div id = "backspace" class = "material-icons"> &#xe14a; </div>
-                <div class = "seven"> 7 </div>
-                <div class = "eight"> 8 </div>
-                <div class = "nine"> 9 </div>
-                <div class = "multiply"> &times; </div>
-                <div class = "four"> 4 </div>
-                <div class = "five"> 5 </div>
-                <div class = "six"> 6 </div>
-                <div class = "sub"> - </div>
-                <div class = "one"> 1 </div>
-                <div class = "two"> 2 </div>
-                <div class = "three"> 3 </div>
-                <div class = "add"> + </div>
-                <div class = "double-zero"> 00 </div>
-                <div class = "zero"> 0 </div>
-                <div class = "period"> . </div>
-                <div class = "equal"> = </div>
+                <div id = "seven" onclick = "displayNumber(7)"> 7 </div>
+                <div id = "eight" onclick = "displayNumber(8)"> 8 </div>
+                <div id = "nine" onclick = "displayNumber(9)"> 9 </div>
+                <div id = "multiply" onclick = "displaySymbol('*')"> &times; </div>
+                <div id = "four" onclick = "displayNumber(4)"> 4 </div>
+                <div id = "five" onclick = "displayNumber(5)"> 5 </div>
+                <div id = "six" onclick = "displayNumber(6)"> 6 </div>
+                <div id = "sub" onclick = "displaySymbol('-')"> - </div>
+                <div id = "one" onclick = "displayNumber(1)"> 1 </div>
+                <div id = "two" onclick = "displayNumber(2)"> 2 </div>
+                <div id = "three" onclick = "displayNumber(3)"> 3 </div>
+                <div id = "add" onclick = "displaySymbol('+')"> + </div>
+                <div id = "double-zero" onclick = "doubleZero()"> 00 </div>
+                <div id = "zero" onclick = "displayNumber(0)"> 0 </div>
+                <div id = "period" onclick = "displaySymbol('.')"> . </div>
+                <div id = "equal"> = </div>
             </div>
         </div>
         <div class = "iphone-calc">
             <h1> Iphone </h1>
             <div class = "calc-iphone">
-                <div class = "iphone-display"></div>
-                <div class = "clear"> AC </div>
-                <div class = "change-sign"> +/- </div>
-                <div class = "percent"> &percnt; </div>
-                <div class = "divide"> &divide; </div>
-                <div class = "seven"> 7 </div>
-                <div class = "eight"> 8 </div>
-                <div class = "nine"> 9 </div>
-                <div class = "multiply"> &times; </div>
-                <div class = "four"> 4 </div>
-                <div class = "five"> 5 </div>
-                <div class = "six"> 6 </div>
-                <div class = "sub"> - </div>
-                <div class = "one"> 1 </div>
-                <div class = "two"> 2 </div>
-                <div class = "three"> 3 </div>
-                <div class = "add"> + </div>
-                <div class = "zero"> 0 </div>
-                <div class = "period"> . </div>
-                <div class = "equal"> = </div>
+                <div id = "iphone-display"> <span class="display-content"></span> </div>
+                <div id = "clear"> AC </div>
+                <div id = "change-sign"> +/- </div>
+                <div id = "percent" onclick = "displaySymbol('%')"> &percnt; </div>
+                <div id = "divide" onclick = "displaySymbol('/')"> &divide; </div>
+                <div id = "seven" onclick = "displayNumber(7)"> 7 </div>
+                <div id = "eight" onclick = "displayNumber(8)"> 8 </div>
+                <div id = "nine" onclick = "displayNumber(9)"> 9 </div>
+                <div id = "multiply" onclick = "displaySymbol('*')"> &times; </div>
+                <div id = "four" onclick = "displayNumber(4)"> 4 </div>
+                <div id = "five" onclick = "displayNumber(5)"> 5 </div>
+                <div id = "six" onclick = "displayNumber(6)"> 6 </div>
+                <div id = "sub" onclick = "displaySymbol('-')"> - </div>
+                <div id = "one" onclick = "displayNumber(1)"> 1 </div>
+                <div id = "two" onclick = "displayNumber(2)"> 2 </div>
+                <div id = "three" onclick = "displayNumber(3)"> 3 </div>
+                <div id = "add" onclick = "displaySymbol('+')"> + </div>
+                <div id = "zero" onclick = "displayNumber(0)"> 0 </div>
+                <div id = "period" onclick = "displaySymbol('.')"> . </div>
+                <div id = "equal"> = </div>
             </div>
         </div>
         <script src = "index.js"></script>
