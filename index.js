@@ -49,9 +49,13 @@ function displaySymbol(symbol){
 
     }
     if (display) {
-        if (['+', '-', '*', '/', '%', '.'].includes(display.textContent.slice(-1))) {
+        if ('.'.includes(display.value)){
+            display.textContent += "";
+        }
+        else if (['+', '-', '*', '/', '%', '.'].includes(display.textContent.slice(-1))) {
             display.textContent = display.textContent.slice(0, -1) + symbol;
-        } else {
+        } 
+        else {
             display.textContent += symbol;
         }
     }
@@ -66,7 +70,7 @@ equal.addEventListener('click', function() {
     }
 
     if (display) {
-        display.textContent = eval(display.textContent);
+        display.textContent = "= " + eval(display.textContent);
     }
 })
 
